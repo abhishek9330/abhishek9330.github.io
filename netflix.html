@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+        .header {
+            background-color: #141414;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            width: 100px;
+        }
+        .header nav {
+            display: flex;
+        }
+        .header nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/6ff15357-546f-4be7-9d56-b621870c30d7/40e3196d-d682-46d4-99e6-d59e7eb8f996/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .banner button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #e50914;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            margin-bottom: 20px;
+        }
+        .content .row {
+            display: flex;
+            overflow-x: auto;
+        }
+        .content .row .card {
+            background-color: #333;
+            margin-right: 10px;
+            flex: 0 0 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Latest</a>
+            <a href="#">My List</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button>Watch Now</button>
+    </section>
+    <section class="content">
+        <h2>Popular on Netflix</h2>
+        <div class="row">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </section>
+</body>
+</html>
